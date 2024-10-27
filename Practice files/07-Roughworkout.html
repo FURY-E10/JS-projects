@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<head></head>
-    <title>Rough Workout</title>
-</head>
-<body>
-    
-</body>
-<script></script>
+<html>
+    <head>
+        <title>Rough Workout</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+    <script>
+
+        function supportConversion(length, from, to) {
+            if (from === 'km' && to === 'miles') {
+                return `${length / 1.6} ${to}`;
+
+            } else if (from === 'km' && to === 'ft') {
+                return `${length * 3280.84} ${to}`;
+
+            } else if (from === 'miles' && to === 'km') {
+                return `${length * 1.6} ${to}`;
+
+            } else if (from === 'miles' && to === 'ft') {
+                return `${length * 5280} ${to}`;
+
+            } else if (from === 'ft' && to === 'km') {
+                return `${length / 3280.84} ${to}`;
+
+            } else if (from === 'ft' && to === 'miles') {
+                return `${length / 5280} ${to}`;
+
+            } else if (from === to) {
+                return `${length} ${to}`;
+
+            } else {
+                return `Invalid unit:${unit}`;
+            }
+        }
+
+        console.log(supportConversion(50,'miles','km'));
+        console.log(supportConversion(32,'km','miles'));
+        console.log(supportConversion(5,'km','km'));
+
+        console.log(supportConversion(5,'miles','km'));
+        console.log(supportConversion(5,'miles','ft'));
+        console.log(supportConversion(5,'km','ft'));
+    </script>
 </html>
