@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basket</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const product = {
+        name: 'basket ball',
+        price: 2095,
+        name: 'cricket ball',
+        price: 1099,
+      };
+
+      console.log(product);
+
+      product.price += 500;
+      console.log(product);
+
+      product['delivery-time'] = '3 days';
+      console.log(product);
+      
+
+      function compareprice(product1, product2) {
+        if (product1.price > product2.price) {
+          return product1;
+        } else {
+          return product2;
+        }
+      }
+
+      const product1 = {
+        name: 'basket ball',
+        price: 2095,
+      }
+
+      const product2 = {
+        name: 'cricket ball',
+        price: 1099,
+      }
+
+      console.log(compareprice(product1, product2));
+      */
+
+      function issameproduct(product1, product2) {
+        if (product1.name === product2.name && product1.price === product2.price) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      const product1 = {
+        name: 'basket ball',
+        price: 2095,
+      }
+
+      const product2 = {
+        name: 'cricket ball',
+        price: 1099,
+      }
+
+      const product3 = {
+        name: 'tennis ball',
+        price: 1595,
+      }
+
+      console.log(issameproduct(product1, product2));
+      console.log(issameproduct(product1, product3));
+
+      let word = 'FURY';
+
+      let lowercase = word.toLowerCase();
+      console.log(lowercase);
+
+      let uppercase = word.toUpperCase();
+      console.log(uppercase);
+
+      let repeated = word.repeat(3);
+      console.log(repeated);
+
+
+    </script>
+  </body>
+</html>
