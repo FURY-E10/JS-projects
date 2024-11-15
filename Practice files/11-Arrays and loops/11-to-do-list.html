@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head><title>To-Do-List</title> </head>
+<head><title>To-Do-List</title>
+<link rel="stylesheet" href="css/11-todo-css.css">
+ </head>
 <body>
 
   <p>ToDo-list</p>
 
-  <input placeholder="Todo-name" class="js-input">
+  <div class="todo-input-grid">
 
-  <button onclick="
-    addTodo();
-  ">Add</button>
+    <input placeholder="Todo-name" class="js-input name-input">
 
-  <div class="js-todo-list"></div>
+    <input type="date" class="js-date date-input">
+
+    <button onclick="
+      addTodo();
+    " class="add-todo-button">Add</button>
+  </div>
+
+  <div class="js-todo-list todo-grid">
+
+  </div>
 
 </body>
 <script src="scripts/11todo.js"></script>
